@@ -53,11 +53,11 @@ export const Title = styled.h1`
         font-size:6rem;
     }
 
-    @media screen and (max-width:410px){
-        font-size:3rem;
+    @media screen and (max-width:380px){
+        font-size:2.5rem;
     }
 
-    @media screen and (max-width:420px){
+    @media screen and (min-width:410px){
         font-size:4rem;
     }
 
@@ -77,11 +77,11 @@ export const Paragraph = styled.p`
         font-size:1.35rem;
     }
 
-    @media screen and (max-width:420px){
+    @media screen and (min-width:410px){
         font-size:1.25rem;
     }
 
-    @media screen and (max-width:410px){
+    @media screen and (max-width:380px){
         font-size:0.9rem;
     }
 
@@ -124,8 +124,8 @@ export const Icon = styled(FaAtlas)`
         font-size:5rem;
     }
 
-    @media screen and (max-width:410px){
-        font-size:2.5rem;
+    @media screen and (max-width:420px){
+        font-size:3.5rem;
     }
 `
 

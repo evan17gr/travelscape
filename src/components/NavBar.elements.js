@@ -31,8 +31,16 @@ export const NavLogo = styled(Link)`
     display:flex;
     align-items:center;
 
-    @media screen and (max-width:410px){
+    @media screen and (min-width:410px){
         font-size:1.7rem;
+    }
+
+    @media screen and (max-width:320px){
+        font-size:1.5rem;
+    }
+
+    @media screen and (max-width:280px){
+        font-size:1.3rem;
     }
 `
 
@@ -55,14 +63,27 @@ export const MobileIcon = styled.div`
         cursor: pointer;    
     }
 
-    @media screen and (max-width:410px){
-        margin-top:0.37rem;
+    @media screen and (min-width:410px){
+        margin-top:0.27rem;
+        font-size:1.8rem;
+    }
+
+    @media screen and (max-width:380px){
+        margin-top:0.34rem;
         font-size:1.7rem;
     }
 
-    @media screen and (max-width:420px){
-        margin-top:0.23rem;
+    @media screen and (max-width:320px){
+        margin-top:0.57rem;
+        font-size:1.5rem;
     }
+
+    @media screen and (max-width:280px){
+        margin-top:0.82rem;
+        font-size:1.3rem;
+    }
+
+
 `
 
 export const NavMenu = styled.ul`
