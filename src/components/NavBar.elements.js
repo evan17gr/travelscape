@@ -23,18 +23,22 @@ export const NavBarContainer = styled(Container)`
 `
 
 export const NavLogo = styled(Link)`
-    color:#fff;
+    color:#ffc003;
     justify-self:flex-start;
     cursor:pointer;
     text-decoration:none;
     font-size:2rem;
     display:flex;
     align-items:center;
+
+    @media screen and (max-width:410px){
+        font-size:1.7rem;
+    }
 `
 
 export const NavIcon = styled(FaMagento)`
     margin:0.3rem;
-    color:#0467FB;
+    color:#ffc003 !important;
 `
 
 export const MobileIcon = styled.div`
@@ -46,8 +50,18 @@ export const MobileIcon = styled.div`
         top:0;
         right:0;
         transform:translate(-100%, 60%);
+        margin-top:0rem;
         font-size:1.8rem;
         cursor: pointer;    
+    }
+
+    @media screen and (max-width:410px){
+        margin-top:0.37rem;
+        font-size:1.7rem;
+    }
+
+    @media screen and (max-width:420px){
+        margin-top:0.23rem;
     }
 `
 
@@ -76,7 +90,7 @@ export const NavItem = styled.li`
     border-bottom:2px solid transparent;
 
     &:hover{
-        border-bottom: 5px solid #4b59f7;
+        border-bottom: 5px solid #ffc003;
     }
 
     @media screen and (max-width: 960px){
@@ -89,12 +103,16 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(Link)`
-    color:#fff;
+    color:#ffc003;
     display:flex;
     align-items:center;
     text-decoration: none;
     padding:0.5rem 1rem;
     height:100%;
+    transition: color 0.25s ease-in-out;
+    &:hover{
+            color:#fff;
+    }
 
     @media screen and (max-width: 960px){
         text-align:center;
@@ -103,7 +121,7 @@ export const NavLinks = styled(Link)`
         display:table;
 
         &:hover{
-            color:#4b59f7;
+            color:#fff;
             transform: all 0.3s ease;
         }
     }

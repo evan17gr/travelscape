@@ -1,148 +1,117 @@
 import React from 'react';
 import makeCarousel from 'react-reveal/makeCarousel';
-import Slide from 'react-reveal/Slide';
-import {FaMap} from "react-icons/fa";
-import {Container, Video, Button, Description} from "./Section.elements";
-import video from "../videos/production ID_3775278.mp4";
-import video2 from "../videos/production ID_3784238.mp4";
-import video3 from "../videos/production ID_4512518.mp4";
-import video4 from "../videos/video (3).mp4";
-import video5 from "../videos/video (4).mp4";
-import video6 from "../videos/video (5).mp4";
+import Flash from 'react-reveal/Flash';
+import {Container, Video, Arrow, Description, Paragraph, Title, Icon, TitleDiv} from "./Section.elements";
+import video from "../videos/production ID_4611892.mp4";
+import video2 from "../videos/Pexels Videos 2096551.mp4";
+import video3 from "../videos/Pexels Videos 1826896.mp4";
+import video4 from "../videos/Pexels Videos 1291114.mp4";
+import video5 from "../videos/pexels-suporna-ghosh-5880939.mp4";
+import video6 from "../videos/pexels-svanur-gabriele-5969705.mp4";
 
-const CarouselUI = ({ children }) => <Container>{children}</Container>;
+const CarouselUI = ({ position, handleClick, children }) => (
+    <Container>
+        {children}
+        <Arrow onClick={handleClick} data-position={position - 1}>{'<'}</Arrow>
+        <Arrow right onClick={handleClick} data-position={position + 1}>{'>'}</Arrow>
+    </Container>
+);
 const Carousel = makeCarousel(CarouselUI);
-
-const h1styles = {
-    fontFamily: "Montserrat', sans-serif"
-};
-
-const pStyles = {
-    fontSize : "2.3rem"
-};
-
-const icon ={
-    fontSize : "4rem"
-};
 
 const Section = () => {
 
         return (
             <Carousel defaultWait={15000}> 
-                <Slide right>
+                <Flash right>
                 <Video src={video} autoPlay loop muted>
                 </Video>
                 <Description>
+                    <TitleDiv>
+                        <Title>Miami</Title>
+                    </TitleDiv>
                     <div>
-                        <h1 style={h1styles}>Greece</h1>
+                        <Paragraph>Plan your next trip to Miami today, <br/>and check out our other great deals for this week below </Paragraph>
                     </div>
                     <div>
-                        <p style={pStyles}>Slide Description</p>
-                    </div>
-                    <div style={{margin:"3rem 0"}}>
-                        <a>
-                            <FaMap style={icon}>
-                            </FaMap>
-                            Plan your next trip to Greece
-                        </a>
+                        <Icon className="fas fa-atlas"/>
                     </div>
                 </Description>
-                </Slide>
-                <Slide right>
+                </Flash>
+                <Flash right>
                 <Video src={video2} autoPlay loop muted>
                 </Video>
                 <Description>
+                    <TitleDiv>
+                        <Title>Dubai</Title>
+                    </TitleDiv>
                     <div>
-                        <h1 style={h1styles}>Slide 1</h1>
+                    <Paragraph>Plan your next trip to Dubai today, <br/>and check out our other great deals for this week below </Paragraph>
                     </div>
                     <div>
-                        <p style={pStyles}>Slide Description</p>
-                    </div>
-                    <div style={{margin:"3rem 0"}}>
-                        <a>
-                            <FaMap style={icon}>
-                            </FaMap>
-                            Plan your next trip to Greece
-                        </a>
+                        <Icon className="fas fa-atlas"/>
                     </div>
                 </Description>
-                </Slide>
-                <Slide right>
+                </Flash>
+                <Flash right>
                 <Video src={video3} autoPlay loop muted>
                 </Video>
                 <Description >
+                    <TitleDiv>
+                        <Title>Chicago</Title>
+                    </TitleDiv>
                     <div>
-                        <h1 style={h1styles}>Slide 1</h1>
+                    <Paragraph>Plan your next trip to Chicago today, <br/>and check out our other great deals for this week below </Paragraph>
                     </div>
                     <div>
-                        <p style={pStyles}>Slide Description</p>
-                    </div>
-                    <div style={{margin:"3rem 0"}}>
-                        <a>
-                            <FaMap style={icon}>
-                            </FaMap>
-                            Plan your next trip to Greece
-                        </a>
+                        <Icon className="fas fa-atlas"/>
                     </div>
                 </Description>
-                </Slide>
-                <Slide right>
+                </Flash>
+                <Flash right>
                 <Video src={video4} autoPlay loop muted>
                 </Video>
                 <Description >
+                    <TitleDiv>
+                        <Title>Ontario</Title>
+                    </TitleDiv>
                     <div>
-                        <h1 style={h1styles}>Slide 1</h1>
+                    <Paragraph>Plan your next trip to Ontario today, <br/>and check out our other great deals for this week below </Paragraph>
                     </div>
                     <div>
-                        <p style={pStyles}>Slide Description</p>
-                    </div>
-                    <div style={{margin:"3rem 0"}}>
-                        <a>
-                            <FaMap style={icon}>
-                            </FaMap>
-                            Plan your next trip to Greece
-                        </a>
+                        <Icon className="fas fa-atlas"/>
                     </div>
                 </Description>
-                </Slide>
-                <Slide right>
+                </Flash>
+                <Flash right>
                 <Video src={video5} autoPlay loop muted>
                 </Video>
-                <Description >
+                <Description>
+                    <TitleDiv>
+                        <Title>Oslo</Title>
+                    </TitleDiv>
                     <div>
-                        <h1 style={h1styles}>Slide 1</h1>
+                    <Paragraph>Plan your next trip to Oslo today, <br/>and check out our other great deals for this week below </Paragraph>
                     </div>
                     <div>
-                        <p style={pStyles}>Slide Description</p>
-                    </div>
-                    <div style={{margin:"3rem 0"}}>
-                        <a>
-                            <FaMap style={icon}>
-                            </FaMap>
-                            Plan your next trip to Greece
-                        </a>
+                        <Icon className="fas fa-atlas"/>
                     </div>
                 </Description>
-                </Slide>
-                <Slide right>
+                </Flash>
+                <Flash right>
                 <Video src={video6} autoPlay loop muted>
                 </Video>
                 <Description >
+                    <TitleDiv>
+                        <Title>Reykjavík</Title>
+                    </TitleDiv>
                     <div>
-                        <h1 style={h1styles}>Slide 1</h1>
+                    <Paragraph>Plan your next trip to Reykjavík today, <br/>and check out our other great deals for this week below </Paragraph>
                     </div>
                     <div>
-                        <p style={pStyles}>Slide Description</p>
-                    </div>
-                    <div style={{margin:"3rem 0"}}>
-                        <a>
-                            <FaMap style={icon}>
-                            </FaMap>
-                            Plan your next trip to Greece
-                        </a>
+                        <Icon className="fas fa-atlas"/>
                     </div>
                 </Description>
-                </Slide>
+                </Flash>
             </Carousel>
         );
 }
