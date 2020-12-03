@@ -1,69 +1,71 @@
-import React, {useState, useEffect} from 'react';
-import {FaBars, FaTimes} from "react-icons/fa";
-import {IconContext} from "react-icons/lib";
-import {Button} from "../gloablStyles";
-import { Nav, NavBarContainer, NavLogo, NavIcon, MobileIcon, NavMenu, NavItem, NavLinks, NavItemBtn, NavBtnLink } from "./NavBar.elements";
-
+import React, { useState, useEffect } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
+import { Button } from '../gloablStyles';
+import {
+    Nav,
+    NavBarContainer,
+    NavLogo,
+    NavIcon,
+    MobileIcon,
+    NavMenu,
+    NavItem,
+    NavLinks,
+    NavItemBtn,
+    NavBtnLink,
+} from './NavBar.elements';
 
 const NavBar = () => {
-    
-    const [click, setClick ] = useState(false);
+    const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
-    
+
     const handleClick = () => setClick(!click);
 
     const showButton = () => {
-        if(window.innerWidth <= 960){
+        if (window.innerWidth <= 960) {
             setButton(false);
-        }
-        else{
+        } else {
             setButton(true);
         }
-    }
+    };
 
     useEffect(() => {
         showButton();
-    }, [])
+    }, []);
 
-    window.addEventListener("resize" , showButton);
+    window.addEventListener('resize', showButton);
 
     return (
         <>
-            <IconContext.Provider value={{color:"#fff"}}>
+            <IconContext.Provider value={{ color: '#fff' }}>
                 <Nav>
                     <NavBarContainer>
                         <NavLogo to="/">
-                            <NavIcon/>
+                            <NavIcon />
                             TRAVELSCAPE
                         </NavLogo>
                         <MobileIcon onClick={handleClick}>
-                            {click ? <FaTimes/> : <FaBars/>}
+                            {click ? <FaTimes /> : <FaBars />}
                         </MobileIcon>
                         <NavMenu onClick={handleClick} click={click}>
                             <NavItem>
-                                <NavLinks to="/">
-                                    Home
-                                </NavLinks>
+                                <NavLinks to="/">Home</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="/services">
-                                    Services
-                                </NavLinks>
+                                <NavLinks to="/services">Services</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="/products">
-                                    Products
-                                </NavLinks>
+                                <NavLinks to="/products">Products</NavLinks>
                             </NavItem>
                             <NavItemBtn>
                                 {button ? (
-                                    <NavBtnLink to ="/sign-up">
+                                    <NavBtnLink to="/sign-up">
                                         <Button primary> SIGN UP </Button>
                                     </NavBtnLink>
                                 ) : (
-                                    <NavBtnLink to ="/sign-up">
-                                        <Button fontBig primary> 
-                                            SIGN UP 
+                                    <NavBtnLink to="/sign-up">
+                                        <Button fontBig primary>
+                                            SIGN UP
                                         </Button>
                                     </NavBtnLink>
                                 )}
@@ -74,6 +76,6 @@ const NavBar = () => {
             </IconContext.Provider>
         </>
     );
-}
+};
 
 export default NavBar;
