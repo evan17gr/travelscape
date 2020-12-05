@@ -8,7 +8,6 @@ export const Container = styled.div`
     position: absolute;
     z-index: 999;
     width: 100%;
-    min-height: 100%;
     display: flex;
     flex-direction: column;
     @media screen and (max-width: 960px) {
@@ -213,7 +212,7 @@ export const NavBarLink = styled.a`
 
     @media screen and (max-width: 375px) {
         font-size: 0.7rem;
-        margin: 0 0.25rem;
+        margin: 0 0.33rem;
     }
 
     @media screen and (max-width: 410px) {

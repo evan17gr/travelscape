@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     Container,
     TitleDiv,
@@ -21,9 +21,8 @@ import {
     ImagesDiv,
     ExploreDiv,
     ExploreLink,
-    NavBarItemActive,
     ArrowIcon,
-    HotelInfo
+    HotelInfo,
 } from './Section2.elements';
 import image from '../images/andre-benz-Mn9Fa_wQH-M-unsplash.jpg';
 import image2 from '../images/luca-bravo-_QdFx92MO2U-unsplash.jpg';
@@ -33,6 +32,8 @@ import image5 from '../images/1407953244000-177513283.jpg';
 import image6 from '../images/Thompson Chicago Guestroom Corner King Lowres MK0214 CRPD1200x800.jpg';
 
 const Section2 = () => {
+    const [activeIndex, setActiveIndex] = useState(0);
+
     return (
         <Container id="deals">
             <TitleDiv>
@@ -53,9 +54,9 @@ const Section2 = () => {
                             <NavBar>
                                 <div>
                                     <NavBarList>
-                                        <NavBarItemActive>
+                                        <NavBarItem>
                                             <NavBarLink>Hotels</NavBarLink>
-                                        </NavBarItemActive>
+                                        </NavBarItem>
                                         <NavBarItem>
                                             <NavBarLink>Restaurants</NavBarLink>
                                         </NavBarItem>
@@ -99,9 +100,9 @@ const Section2 = () => {
                             <NavBar>
                                 <div>
                                     <NavBarList>
-                                        <NavBarItemActive>
+                                        <NavBarItem>
                                             <NavBarLink>Hotels</NavBarLink>
-                                        </NavBarItemActive>
+                                        </NavBarItem>
                                         <NavBarItem>
                                             <NavBarLink>Restaurants</NavBarLink>
                                         </NavBarItem>
@@ -145,9 +146,9 @@ const Section2 = () => {
                             <NavBar>
                                 <div>
                                     <NavBarList>
-                                        <NavBarItemActive>
+                                        <NavBarItem>
                                             <NavBarLink>Hotels</NavBarLink>
-                                        </NavBarItemActive>
+                                        </NavBarItem>
                                         <NavBarItem>
                                             <NavBarLink>Restaurants</NavBarLink>
                                         </NavBarItem>
@@ -191,9 +192,9 @@ const Section2 = () => {
                             <NavBar>
                                 <div>
                                     <NavBarList>
-                                        <NavBarItemActive>
+                                        <NavBarItem>
                                             <NavBarLink>Hotels</NavBarLink>
-                                        </NavBarItemActive>
+                                        </NavBarItem>
                                         <NavBarItem>
                                             <NavBarLink>Restaurants</NavBarLink>
                                         </NavBarItem>
@@ -227,7 +228,7 @@ const Section2 = () => {
                 </CardDiv>
             </CardsDiv>
             <ExploreDiv>
-                <ExploreLink>Check more deals</ExploreLink>
+                <ExploreLink to="/deals">Check more deals</ExploreLink>
                 <ArrowIcon></ArrowIcon>
             </ExploreDiv>
         </Container>
