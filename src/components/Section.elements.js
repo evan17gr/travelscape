@@ -20,7 +20,7 @@ export const Description = styled.div`
     left: 0;
     z-index: 1;
     width: 100%;
-    height: 100vh;
+    height: 700px;
     display: flex;
     justify-content: center;
     flex-direction: column;

@@ -33,7 +33,7 @@ const Carousel = makeCarousel(CarouselUI);
 
 const Section = () => {
     return (
-        <Carousel defaultWait={15000}>
+        <Carousel defaultWait={10000}>
             <Flash right>
                 <Video src={video} autoPlay loop muted></Video>
                 <Description>

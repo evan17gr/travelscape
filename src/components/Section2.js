@@ -13,11 +13,28 @@ import {
     BottomInfoDiv,
     NavBar,
     NavBarLink,
+    NavBarList,
+    NavBarItem,
+    PlacesInfoDiv,
+    PlacesInfoSubDiv,
+    InfoImage,
+    ImagesDiv,
+    ExploreDiv,
+    ExploreLink,
+    NavBarItemActive,
+    ArrowIcon,
+    HotelInfo
 } from './Section2.elements';
+import image from '../images/andre-benz-Mn9Fa_wQH-M-unsplash.jpg';
+import image2 from '../images/luca-bravo-_QdFx92MO2U-unsplash.jpg';
+import image3 from '../images/mikel-parera-ccrvtFDXacg-unsplash.jpg';
+import image4 from '../images/reuben-chew-PQIE431vXI4-unsplash.jpg';
+import image5 from '../images/1407953244000-177513283.jpg';
+import image6 from '../images/Thompson Chicago Guestroom Corner King Lowres MK0214 CRPD1200x800.jpg';
 
 const Section2 = () => {
     return (
-        <Container>
+        <Container id="deals">
             <TitleDiv>
                 <div>
                     <Title>Our Top Destinations of this week</Title>
@@ -26,10 +43,7 @@ const Section2 = () => {
             <CardsDiv>
                 <CardDiv>
                     <ImageDiv>
-                        <BackgroundImage
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhnuS1vAJzRxRx7CIncAZe0uZ7_uuPGtMHYQ&usqp=CAU"
-                            alt="hello"
-                        />
+                        <BackgroundImage src={image2} alt="hello" />
                     </ImageDiv>
                     <InfoDiv>
                         <InfoTitleDiv>
@@ -38,221 +52,184 @@ const Section2 = () => {
                         <BottomInfoDiv>
                             <NavBar>
                                 <div>
-                                    <ul
-                                        style={{
-                                            listStyleType: 'none',
-                                        }}
-                                    >
-                                        <li>
+                                    <NavBarList>
+                                        <NavBarItemActive>
                                             <NavBarLink>Hotels</NavBarLink>
-                                        </li>
-                                        <li>
+                                        </NavBarItemActive>
+                                        <NavBarItem>
                                             <NavBarLink>Restaurants</NavBarLink>
-                                        </li>
-                                        <li>
+                                        </NavBarItem>
+                                        <NavBarItem>
                                             <NavBarLink>Museums</NavBarLink>
-                                        </li>
-                                        <li>
+                                        </NavBarItem>
+                                        <NavBarItem>
                                             <NavBarLink>Activities</NavBarLink>
-                                        </li>
-                                    </ul>
+                                        </NavBarItem>
+                                    </NavBarList>
                                 </div>
                             </NavBar>
-                            <div>
-                                <div>
-                                    <h3>Hotels</h3>
-                                </div>
-                                <div>
-                                    <p>
-                                        333 W. Wacker Drive,
-                                        <br /> Suite 1100, Chicago
-                                    </p>
-                                </div>
-                                <div>
-                                    <h3>+1 123 654 987 36</h3>
-                                </div>
-                                <div>
-                                    <div>
-                                        <img src="" />
-                                        <img src="" />
-                                    </div>
-                                </div>
-                            </div>
+                            <PlacesInfoDiv>
+                                <PlacesInfoSubDiv>
+                                    <HotelInfo>
+                                        <h3>Hotels LTD</h3>
+                                        <p>
+                                            333 W. Wacker Drive,
+                                            <br /> Suite 1100, Chicago
+                                        </p>
+                                        <h3>+1 123 654 987 36</h3>
+                                    </HotelInfo>
+                                    <ImagesDiv>
+                                        <InfoImage src={image5} />
+                                        <InfoImage src={image6} />
+                                    </ImagesDiv>
+                                </PlacesInfoSubDiv>
+                            </PlacesInfoDiv>
                         </BottomInfoDiv>
                     </InfoDiv>
                 </CardDiv>
                 <CardDiv>
                     <ImageDiv>
-                        <BackgroundImage
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhnuS1vAJzRxRx7CIncAZe0uZ7_uuPGtMHYQ&usqp=CAU"
-                            alt="hello"
-                        />
+                        <BackgroundImage src={image4} alt="hello" />
                     </ImageDiv>
                     <InfoDiv>
                         <InfoTitleDiv>
-                            <InfoTitle>Chicago</InfoTitle>
+                            <InfoTitle>Singapore</InfoTitle>
                         </InfoTitleDiv>
                         <BottomInfoDiv>
                             <NavBar>
                                 <div>
-                                    <ul
-                                        style={{
-                                            listStyleType: 'none',
-                                        }}
-                                    >
-                                        <li>
+                                    <NavBarList>
+                                        <NavBarItemActive>
                                             <NavBarLink>Hotels</NavBarLink>
-                                        </li>
-                                        <li>
+                                        </NavBarItemActive>
+                                        <NavBarItem>
                                             <NavBarLink>Restaurants</NavBarLink>
-                                        </li>
-                                        <li>
+                                        </NavBarItem>
+                                        <NavBarItem>
                                             <NavBarLink>Museums</NavBarLink>
-                                        </li>
-                                        <li>
+                                        </NavBarItem>
+                                        <NavBarItem>
                                             <NavBarLink>Activities</NavBarLink>
-                                        </li>
-                                    </ul>
+                                        </NavBarItem>
+                                    </NavBarList>
                                 </div>
                             </NavBar>
-                            <div>
-                                <div>
-                                    <h3>Hotels</h3>
-                                </div>
-                                <div>
-                                    <p>
-                                        333 W. Wacker Drive,
-                                        <br /> Suite 1100, Chicago
-                                    </p>
-                                </div>
-                                <div>
-                                    <h3>+1 123 654 987 36</h3>
-                                </div>
-                                <div>
-                                    <div>
-                                        <img src="" />
-                                        <img src="" />
-                                    </div>
-                                </div>
-                            </div>
+                            <PlacesInfoDiv>
+                                <PlacesInfoSubDiv>
+                                    <HotelInfo>
+                                        <h3>Hotels LTD</h3>
+                                        <p>
+                                            333 W. Wacker Drive,
+                                            <br /> Suite 1100, Chicago
+                                        </p>
+                                        <h3>+1 123 654 987 36</h3>
+                                    </HotelInfo>
+                                    <ImagesDiv>
+                                        <InfoImage src={image5} />
+                                        <InfoImage src={image6} />
+                                    </ImagesDiv>
+                                </PlacesInfoSubDiv>
+                            </PlacesInfoDiv>
                         </BottomInfoDiv>
                     </InfoDiv>
                 </CardDiv>
                 <CardDiv>
                     <ImageDiv>
-                        <BackgroundImage
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhnuS1vAJzRxRx7CIncAZe0uZ7_uuPGtMHYQ&usqp=CAU"
-                            alt="hello"
-                        />
+                        <BackgroundImage src={image3} alt="hello" />
                     </ImageDiv>
                     <InfoDiv>
                         <InfoTitleDiv>
-                            <InfoTitle>Chicago</InfoTitle>
+                            <InfoTitle>London</InfoTitle>
                         </InfoTitleDiv>
                         <BottomInfoDiv>
                             <NavBar>
                                 <div>
-                                    <ul
-                                        style={{
-                                            listStyleType: 'none',
-                                        }}
-                                    >
-                                        <li>
+                                    <NavBarList>
+                                        <NavBarItemActive>
                                             <NavBarLink>Hotels</NavBarLink>
-                                        </li>
-                                        <li>
+                                        </NavBarItemActive>
+                                        <NavBarItem>
                                             <NavBarLink>Restaurants</NavBarLink>
-                                        </li>
-                                        <li>
+                                        </NavBarItem>
+                                        <NavBarItem>
                                             <NavBarLink>Museums</NavBarLink>
-                                        </li>
-                                        <li>
+                                        </NavBarItem>
+                                        <NavBarItem>
                                             <NavBarLink>Activities</NavBarLink>
-                                        </li>
-                                    </ul>
+                                        </NavBarItem>
+                                    </NavBarList>
                                 </div>
                             </NavBar>
-                            <div>
-                                <div>
-                                    <h3>Hotels</h3>
-                                </div>
-                                <div>
-                                    <p>
-                                        333 W. Wacker Drive,
-                                        <br /> Suite 1100, Chicago
-                                    </p>
-                                </div>
-                                <div>
-                                    <h3>+1 123 654 987 36</h3>
-                                </div>
-                                <div>
-                                    <div>
-                                        <img src="" />
-                                        <img src="" />
-                                    </div>
-                                </div>
-                            </div>
+                            <PlacesInfoDiv>
+                                <PlacesInfoSubDiv>
+                                    <HotelInfo>
+                                        <h3>Hotels LTD</h3>
+                                        <p>
+                                            333 W. Wacker Drive,
+                                            <br /> Suite 1100, Chicago
+                                        </p>
+                                        <h3>+1 123 654 987 36</h3>
+                                    </HotelInfo>
+                                    <ImagesDiv>
+                                        <InfoImage src={image5} />
+                                        <InfoImage src={image6} />
+                                    </ImagesDiv>
+                                </PlacesInfoSubDiv>
+                            </PlacesInfoDiv>
                         </BottomInfoDiv>
                     </InfoDiv>
                 </CardDiv>
                 <CardDiv>
                     <ImageDiv>
-                        <BackgroundImage
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhnuS1vAJzRxRx7CIncAZe0uZ7_uuPGtMHYQ&usqp=CAU"
-                            alt="hello"
-                        />
+                        <BackgroundImage src={image} alt="hello" />
                     </ImageDiv>
                     <InfoDiv>
                         <InfoTitleDiv>
-                            <InfoTitle>Chicago</InfoTitle>
+                            <InfoTitle>Tokyo</InfoTitle>
                         </InfoTitleDiv>
                         <BottomInfoDiv>
                             <NavBar>
                                 <div>
-                                    <ul
-                                        style={{
-                                            listStyleType: 'none',
-                                        }}
-                                    >
-                                        <li>
+                                    <NavBarList>
+                                        <NavBarItemActive>
                                             <NavBarLink>Hotels</NavBarLink>
-                                        </li>
-                                        <li>
+                                        </NavBarItemActive>
+                                        <NavBarItem>
                                             <NavBarLink>Restaurants</NavBarLink>
-                                        </li>
-                                        <li>
+                                        </NavBarItem>
+                                        <NavBarItem>
                                             <NavBarLink>Museums</NavBarLink>
-                                        </li>
-                                        <li>
+                                        </NavBarItem>
+                                        <NavBarItem>
                                             <NavBarLink>Activities</NavBarLink>
-                                        </li>
-                                    </ul>
+                                        </NavBarItem>
+                                    </NavBarList>
                                 </div>
                             </NavBar>
-                            <div>
-                                <div>
-                                    <h3>Hotels</h3>
-                                </div>
-                                <div>
-                                    <p>
-                                        333 W. Wacker Drive,
-                                        <br /> Suite 1100, Chicago
-                                    </p>
-                                </div>
-                                <div>
-                                    <h3>+1 123 654 987 36</h3>
-                                </div>
-                                <div>
-                                    <div>
-                                        <img src="" />
-                                        <img src="" />
-                                    </div>
-                                </div>
-                            </div>
+                            <PlacesInfoDiv>
+                                <PlacesInfoSubDiv>
+                                    <HotelInfo>
+                                        <h3>Hotels LTD</h3>
+                                        <p>
+                                            333 W. Wacker Drive,
+                                            <br /> Suite 1100, Chicago
+                                        </p>
+                                        <h3>+1 123 654 987 36</h3>
+                                    </HotelInfo>
+                                    <ImagesDiv>
+                                        <InfoImage src={image5} />
+                                        <InfoImage src={image6} />
+                                    </ImagesDiv>
+                                </PlacesInfoSubDiv>
+                            </PlacesInfoDiv>
                         </BottomInfoDiv>
                     </InfoDiv>
                 </CardDiv>
             </CardsDiv>
+            <ExploreDiv>
+                <ExploreLink>Check more deals</ExploreLink>
+                <ArrowIcon></ArrowIcon>
+            </ExploreDiv>
         </Container>
     );
 };
