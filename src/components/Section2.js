@@ -15,6 +15,7 @@ import {
     NavBarLink,
     NavBarList,
     NavBarItem,
+    NavBarItemActive,
     PlacesInfoDiv,
     PlacesInfoSubDiv,
     InfoImage,
@@ -30,9 +31,70 @@ import image3 from '../images/mikel-parera-ccrvtFDXacg-unsplash.jpg';
 import image4 from '../images/reuben-chew-PQIE431vXI4-unsplash.jpg';
 import image5 from '../images/1407953244000-177513283.jpg';
 import image6 from '../images/Thompson Chicago Guestroom Corner King Lowres MK0214 CRPD1200x800.jpg';
+import image7 from '../images/jakub-kapusnak-4f4YZfDMLeU-unsplash.jpg';
+import image8 from '../images/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg';
+import image9 from '../images/cristina-gottardi-05P65mxLuW8-unsplash.jpg';
+import image10 from '../images/lance-anderson-uevmkfCH98Q-unsplash.jpg';
+import image11 from '../images/mark-pecar-CNdjopTC1qA-unsplash.jpg';
+import image12 from '../images/tim-trad-AIwlyvpQJ18-unsplash.jpg';
 
 const Section2 = () => {
     const [activeIndex, setActiveIndex] = useState(0);
+
+    let info = [
+        {
+            id: 0,
+            category: 'Hotels',
+            company: 'Hotels LTD',
+            addressPartOne: '333 W. Wacker Drive,',
+            addressPartTwo: 'Suite 1100, Chicago',
+            number: '+1 123 654 987 36',
+            images: {
+                image1: image5,
+                image2: image6,
+            },
+        },
+        {
+            id: 1,
+            category: 'Restaurants',
+            company: 'Restaurants LTD',
+            addressPartOne: '333 N Dearborn St,',
+            addressPartTwo: 'Chicago, IL 60654',
+            number: ' +1 312 245 0333',
+            images: {
+                image1: image7,
+                image2: image8,
+            },
+        },
+        {
+            id: 2,
+            category: 'Museums',
+            company: 'Museums LTD',
+            addressPartOne: '111 S Michigan Ave,',
+            addressPartTwo: 'Chicago, IL 60603',
+            number: '+1 312 443 3600',
+            images: {
+                image1: image9,
+                image2: image10,
+            },
+        },
+        {
+            id: 3,
+            category: 'Activities',
+            company: 'Amuse LTD',
+            addressPartOne: '172 N Racine Ave,',
+            addressPartTwo: 'Chicago, IL 60607',
+            number: '+1 872 249 9957',
+            images: {
+                image1: image11,
+                image2: image12,
+            },
+        },
+    ];
+
+    const changeDescription = (idx) => {
+        setActiveIndex(idx);
+    };
 
     return (
         <Container id="deals">
@@ -54,34 +116,58 @@ const Section2 = () => {
                             <NavBar>
                                 <div>
                                     <NavBarList>
-                                        <NavBarItem>
-                                            <NavBarLink>Hotels</NavBarLink>
-                                        </NavBarItem>
-                                        <NavBarItem>
-                                            <NavBarLink>Restaurants</NavBarLink>
-                                        </NavBarItem>
-                                        <NavBarItem>
-                                            <NavBarLink>Museums</NavBarLink>
-                                        </NavBarItem>
-                                        <NavBarItem>
-                                            <NavBarLink>Activities</NavBarLink>
-                                        </NavBarItem>
+                                        {info.map((item) =>
+                                            item.id === activeIndex ? (
+                                                <NavBarItemActive
+                                                    onClick={() =>
+                                                        changeDescription(
+                                                            item.id
+                                                        )
+                                                    }
+                                                >
+                                                    <NavBarLink>
+                                                        {item.category}
+                                                    </NavBarLink>
+                                                </NavBarItemActive>
+                                            ) : (
+                                                <NavBarItem
+                                                    onClick={() =>
+                                                        changeDescription(
+                                                            item.id
+                                                        )
+                                                    }
+                                                >
+                                                    <NavBarLink>
+                                                        {item.category}
+                                                    </NavBarLink>
+                                                </NavBarItem>
+                                            )
+                                        )}
                                     </NavBarList>
                                 </div>
                             </NavBar>
                             <PlacesInfoDiv>
                                 <PlacesInfoSubDiv>
                                     <HotelInfo>
-                                        <h3>Hotels LTD</h3>
+                                        <h3>{info[activeIndex].company}</h3>
                                         <p>
-                                            333 W. Wacker Drive,
-                                            <br /> Suite 1100, Chicago
+                                            {info[activeIndex].addressPartOne}
+                                            <br />{' '}
+                                            {info[activeIndex].addressPartTwo}
                                         </p>
-                                        <h3>+1 123 654 987 36</h3>
+                                        <h3>{info[activeIndex].number}</h3>
                                     </HotelInfo>
                                     <ImagesDiv>
-                                        <InfoImage src={image5} />
-                                        <InfoImage src={image6} />
+                                        <InfoImage
+                                            src={
+                                                info[activeIndex].images.image1
+                                            }
+                                        />
+                                        <InfoImage
+                                            src={
+                                                info[activeIndex].images.image2
+                                            }
+                                        />
                                     </ImagesDiv>
                                 </PlacesInfoSubDiv>
                             </PlacesInfoDiv>
@@ -100,34 +186,58 @@ const Section2 = () => {
                             <NavBar>
                                 <div>
                                     <NavBarList>
-                                        <NavBarItem>
-                                            <NavBarLink>Hotels</NavBarLink>
-                                        </NavBarItem>
-                                        <NavBarItem>
-                                            <NavBarLink>Restaurants</NavBarLink>
-                                        </NavBarItem>
-                                        <NavBarItem>
-                                            <NavBarLink>Museums</NavBarLink>
-                                        </NavBarItem>
-                                        <NavBarItem>
-                                            <NavBarLink>Activities</NavBarLink>
-                                        </NavBarItem>
+                                        {info.map((item) =>
+                                            item.id === activeIndex ? (
+                                                <NavBarItemActive
+                                                    onClick={() =>
+                                                        changeDescription(
+                                                            item.id
+                                                        )
+                                                    }
+                                                >
+                                                    <NavBarLink>
+                                                        {item.category}
+                                                    </NavBarLink>
+                                                </NavBarItemActive>
+                                            ) : (
+                                                <NavBarItem
+                                                    onClick={() =>
+                                                        changeDescription(
+                                                            item.id
+                                                        )
+                                                    }
+                                                >
+                                                    <NavBarLink>
+                                                        {item.category}
+                                                    </NavBarLink>
+                                                </NavBarItem>
+                                            )
+                                        )}
                                     </NavBarList>
                                 </div>
                             </NavBar>
                             <PlacesInfoDiv>
                                 <PlacesInfoSubDiv>
                                     <HotelInfo>
-                                        <h3>Hotels LTD</h3>
+                                        <h3>{info[activeIndex].company}</h3>
                                         <p>
-                                            333 W. Wacker Drive,
-                                            <br /> Suite 1100, Chicago
+                                            {info[activeIndex].addressPartOne}
+                                            <br />{' '}
+                                            {info[activeIndex].addressPartTwo}
                                         </p>
-                                        <h3>+1 123 654 987 36</h3>
+                                        <h3>{info[activeIndex].number}</h3>
                                     </HotelInfo>
                                     <ImagesDiv>
-                                        <InfoImage src={image5} />
-                                        <InfoImage src={image6} />
+                                        <InfoImage
+                                            src={
+                                                info[activeIndex].images.image1
+                                            }
+                                        />
+                                        <InfoImage
+                                            src={
+                                                info[activeIndex].images.image2
+                                            }
+                                        />
                                     </ImagesDiv>
                                 </PlacesInfoSubDiv>
                             </PlacesInfoDiv>
@@ -146,34 +256,58 @@ const Section2 = () => {
                             <NavBar>
                                 <div>
                                     <NavBarList>
-                                        <NavBarItem>
-                                            <NavBarLink>Hotels</NavBarLink>
-                                        </NavBarItem>
-                                        <NavBarItem>
-                                            <NavBarLink>Restaurants</NavBarLink>
-                                        </NavBarItem>
-                                        <NavBarItem>
-                                            <NavBarLink>Museums</NavBarLink>
-                                        </NavBarItem>
-                                        <NavBarItem>
-                                            <NavBarLink>Activities</NavBarLink>
-                                        </NavBarItem>
+                                        {info.map((item) =>
+                                            item.id === activeIndex ? (
+                                                <NavBarItemActive
+                                                    onClick={() =>
+                                                        changeDescription(
+                                                            item.id
+                                                        )
+                                                    }
+                                                >
+                                                    <NavBarLink>
+                                                        {item.category}
+                                                    </NavBarLink>
+                                                </NavBarItemActive>
+                                            ) : (
+                                                <NavBarItem
+                                                    onClick={() =>
+                                                        changeDescription(
+                                                            item.id
+                                                        )
+                                                    }
+                                                >
+                                                    <NavBarLink>
+                                                        {item.category}
+                                                    </NavBarLink>
+                                                </NavBarItem>
+                                            )
+                                        )}
                                     </NavBarList>
                                 </div>
                             </NavBar>
                             <PlacesInfoDiv>
                                 <PlacesInfoSubDiv>
                                     <HotelInfo>
-                                        <h3>Hotels LTD</h3>
+                                        <h3>{info[activeIndex].company}</h3>
                                         <p>
-                                            333 W. Wacker Drive,
-                                            <br /> Suite 1100, Chicago
+                                            {info[activeIndex].addressPartOne}
+                                            <br />{' '}
+                                            {info[activeIndex].addressPartTwo}
                                         </p>
-                                        <h3>+1 123 654 987 36</h3>
+                                        <h3>{info[activeIndex].number}</h3>
                                     </HotelInfo>
                                     <ImagesDiv>
-                                        <InfoImage src={image5} />
-                                        <InfoImage src={image6} />
+                                        <InfoImage
+                                            src={
+                                                info[activeIndex].images.image1
+                                            }
+                                        />
+                                        <InfoImage
+                                            src={
+                                                info[activeIndex].images.image2
+                                            }
+                                        />
                                     </ImagesDiv>
                                 </PlacesInfoSubDiv>
                             </PlacesInfoDiv>
@@ -192,34 +326,58 @@ const Section2 = () => {
                             <NavBar>
                                 <div>
                                     <NavBarList>
-                                        <NavBarItem>
-                                            <NavBarLink>Hotels</NavBarLink>
-                                        </NavBarItem>
-                                        <NavBarItem>
-                                            <NavBarLink>Restaurants</NavBarLink>
-                                        </NavBarItem>
-                                        <NavBarItem>
-                                            <NavBarLink>Museums</NavBarLink>
-                                        </NavBarItem>
-                                        <NavBarItem>
-                                            <NavBarLink>Activities</NavBarLink>
-                                        </NavBarItem>
+                                        {info.map((item) =>
+                                            item.id === activeIndex ? (
+                                                <NavBarItemActive
+                                                    onClick={() =>
+                                                        changeDescription(
+                                                            item.id
+                                                        )
+                                                    }
+                                                >
+                                                    <NavBarLink>
+                                                        {item.category}
+                                                    </NavBarLink>
+                                                </NavBarItemActive>
+                                            ) : (
+                                                <NavBarItem
+                                                    onClick={() =>
+                                                        changeDescription(
+                                                            item.id
+                                                        )
+                                                    }
+                                                >
+                                                    <NavBarLink>
+                                                        {item.category}
+                                                    </NavBarLink>
+                                                </NavBarItem>
+                                            )
+                                        )}
                                     </NavBarList>
                                 </div>
                             </NavBar>
                             <PlacesInfoDiv>
                                 <PlacesInfoSubDiv>
                                     <HotelInfo>
-                                        <h3>Hotels LTD</h3>
+                                        <h3>{info[activeIndex].company}</h3>
                                         <p>
-                                            333 W. Wacker Drive,
-                                            <br /> Suite 1100, Chicago
+                                            {info[activeIndex].addressPartOne}
+                                            <br />{' '}
+                                            {info[activeIndex].addressPartTwo}
                                         </p>
-                                        <h3>+1 123 654 987 36</h3>
+                                        <h3>{info[activeIndex].number}</h3>
                                     </HotelInfo>
                                     <ImagesDiv>
-                                        <InfoImage src={image5} />
-                                        <InfoImage src={image6} />
+                                        <InfoImage
+                                            src={
+                                                info[activeIndex].images.image1
+                                            }
+                                        />
+                                        <InfoImage
+                                            src={
+                                                info[activeIndex].images.image2
+                                            }
+                                        />
                                     </ImagesDiv>
                                 </PlacesInfoSubDiv>
                             </PlacesInfoDiv>

@@ -33,7 +33,7 @@ export const Title = styled.h1`
     }
 
     @media screen and (max-width: 960px) {
-        text-align:center;
+        text-align: center;
     }
 `;
 
@@ -154,8 +154,8 @@ export const NavBar = styled.div`
 `;
 
 export const NavBarLink = styled.a`
-    font-size: 0.977rem;
-    margin: 0 1.7rem;
+    font-size: 1.1vw;
+    margin: 1.5vw;
     text-decoration: none;
     color: #fff;
     cursor: pointer;
@@ -165,93 +165,60 @@ export const NavBarLink = styled.a`
         color: #fff;
     }
 
-    @media screen and (max-width: 1460px) {
-        font-size: 0.97rem;
-        margin: 0 1.65rem;
-    }
-
-    @media screen and (max-width: 1200px) {
-        font-size: 0.9rem;
-        margin: 0 1.1rem;
-    }
-
-    @media screen and (max-width: 1045px) {
-        font-size: 0.9rem;
-        margin: 0 0.7rem;
+    @media screen and (max-width: 1024px) {
+        font-size: 1.3vw;
     }
 
     @media screen and (max-width: 960px) {
-        font-size: 1.2rem;
-        margin: 0 1.3rem;
+        font-size: 1.5vw;
     }
 
-    @media screen and (max-width: 816px) {
-        font-size: 1.1rem;
-        margin: 0 0.9rem;
+    @media screen and (max-width: 768px) {
+        font-size: 2vw;
     }
 
-     @media screen and (max-width: 710px) {
-        font-size: 1rem;
-        margin: 0 0.6rem;
-    }
-
-    @media screen and (max-width: 652px) {
-        font-size: 0.9rem;
-        margin: 0 0.4rem;
-    }
-
-    @media screen and (max-width: 475px) {
-        font-size: 0.8rem;
-        margin: 0 0.3rem;
-    }
-
-    @media screen and (max-width: 420px) {
-        font-size: 0.77rem;
-        margin: 0 0.25rem;
-    }
-
-    @media screen and (max-width: 375px) {
-        font-size: 0.7rem;
-        margin: 0 0.33rem;
-    }
-
-    @media screen and (max-width: 410px) {
-        font-size: 0.7rem;
-        margin: 0 0.15rem;
+    @media screen and (max-width: 540px) {
+        font-size: 2.5vw;
     }
 
     @media screen and (max-width: 320px) {
-        font-size: 0.6rem;
-        margin: 0 0.18rem;
+        font-size: 3vw;
     }
-
-    
 `;
 
 export const NavBarItem = styled.li`
-    border-bottom-width: 70%;
-    border-bottom: 0px solid transparent;
-    padding: 0.8rem 0;
     color: #ffc003;
-
+    padding-top: 0.5vw;
+    padding-bottom: 1vw;
+    position: relative;
     font-weight: 999;
-    transition: border 0.25s ease-in-out;
+    transition: border 0.3s ease-in-out;
 
-    &:hover {
-        border-bottom: 5px solid #ffc003;
-        color: #fff;
+    &:hover::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: calc(100vw - calc(100vw - 100%));
+        content: '';
+        height: 5px;
+        background-color: #ffc003;
     }
 `;
 
 export const NavBarItemActive = styled.li`
-    border-bottom: 5px solid #ffc003;
-    padding: 0.8rem 0;
     color: #ffc003;
     font-weight: 999;
-
-    &:hover {
-        border-bottom: 5px solid #ffc003;
-        color: #fff;
+    position: relative;
+    &::after {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: calc(100vw - calc(100vw - 100%));
+        left: 0;
+        content: '';
+        height: 5px;
+        background-color: #ffc003;
     }
 `;
 
@@ -295,13 +262,12 @@ export const PlacesInfoDiv = styled.div`
     }
 
     @media screen and (max-width: 400px) {
-       font-size: 0.7rem;
+        font-size: 0.7rem;
     }
 
-     @media screen and (max-width: 320px) {
+    @media screen and (max-width: 320px) {
         font-size: 0.6rem;
     }
-
 `;
 
 export const PlacesInfoSubDiv = styled.div`
@@ -309,12 +275,11 @@ export const PlacesInfoSubDiv = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
-
 `;
 
 export const HotelInfo = styled.div`
-    width:100%;
-`
+    width: 100%;
+`;
 
 export const InfoImage = styled.img`
     height: 90px;
@@ -347,7 +312,6 @@ export const InfoImage = styled.img`
         height: 70px;
         width: 80px;
     }
-
 `;
 
 export const ImagesDiv = styled.div`
@@ -360,11 +324,11 @@ export const ImagesDiv = styled.div`
     }
 
     @media screen and (max-width: 652px) {
-        align-items:flex-end;
+        align-items: flex-end;
     }
 
     @media screen and (max-width: 400px) {
-       align-items:center;
+        align-items: center;
     }
 `;
 
@@ -387,12 +351,11 @@ export const ExploreLink = styled(Link)`
     }
 
     @media screen and (max-width: 720px) {
-        text-align:center;
+        text-align: center;
     }
 
     @media screen and (max-width: 410px) {
-        font-size:1.2rem;
-        
+        font-size: 1.2rem;
     }
 `;
 
@@ -420,5 +383,4 @@ export const ArrowIcon = styled(FaAngleDoubleRight)`
     @media screen and (max-width: 960px) {
         font-size: 1.7rem;
     }
-
 `;
