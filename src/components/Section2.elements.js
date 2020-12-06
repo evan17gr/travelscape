@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { FaAngleDoubleRight } from 'react-icons/fa';
+import { FaAngleDoubleLeft } from 'react-icons/fa';
 
 export const Container = styled.div`
     height: 1050px;
@@ -359,7 +359,7 @@ export const ExploreLink = styled(Link)`
     }
 `;
 
-export const ArrowIcon = styled(FaAngleDoubleRight)`
+export const ArrowIcon = styled(FaAngleDoubleLeft)`
     font-size: 2.3rem;
     color: #ffc003;
     text-decoration: none;
