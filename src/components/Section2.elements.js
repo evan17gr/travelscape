@@ -204,6 +204,10 @@ export const NavBarItem = styled.li`
         height: 5px;
         background-color: #ffc003;
     }
+
+    @media screen and (min-width: 1600px) {
+        padding-bottom: 0.8vw;
+    }
 `;
 
 export const NavBarItemActive = styled.li`
