@@ -282,10 +282,10 @@ export const HotelInfo = styled.div`
 `;
 
 export const InfoImage = styled.img`
-    height: 90px;
+    height: 110px;
     width: 110px;
     margin-right: 0.2rem;
-    border-radius: 50%;
+    border-radius: 100%;
     cursor: pointer;
     opacity: 1;
     transition: opacity 1s ease-in-out;
@@ -296,11 +296,13 @@ export const InfoImage = styled.img`
 
     @media screen and (max-width: 960px) {
         margin-right: 0.7rem;
+        height: 90px;
+        width: 90px;
     }
 
     @media screen and (max-width: 652px) {
         height: 85px;
-        width: 95px;
+        width: 85px;
         margin-right: 0.3rem;
     }
 
@@ -310,7 +312,7 @@ export const InfoImage = styled.img`
 
     @media screen and (max-width: 400px) {
         height: 70px;
-        width: 80px;
+        width: 70px;
     }
 `;
 

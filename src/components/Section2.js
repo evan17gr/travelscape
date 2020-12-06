@@ -124,6 +124,7 @@ const Section2 = () => {
                                                             item.id
                                                         )
                                                     }
+                                                    key={item.id}
                                                 >
                                                     <NavBarLink>
                                                         {item.category}
@@ -136,6 +137,7 @@ const Section2 = () => {
                                                             item.id
                                                         )
                                                     }
+                                                    key={item.id}
                                                 >
                                                     <NavBarLink>
                                                         {item.category}
@@ -194,6 +196,7 @@ const Section2 = () => {
                                                             item.id
                                                         )
                                                     }
+                                                    key={item.id}
                                                 >
                                                     <NavBarLink>
                                                         {item.category}
@@ -206,6 +209,7 @@ const Section2 = () => {
                                                             item.id
                                                         )
                                                     }
+                                                    key={item.id}
                                                 >
                                                     <NavBarLink>
                                                         {item.category}
@@ -264,6 +268,7 @@ const Section2 = () => {
                                                             item.id
                                                         )
                                                     }
+                                                    key={item.id}
                                                 >
                                                     <NavBarLink>
                                                         {item.category}
@@ -276,6 +281,7 @@ const Section2 = () => {
                                                             item.id
                                                         )
                                                     }
+                                                    key={item.id}
                                                 >
                                                     <NavBarLink>
                                                         {item.category}
@@ -334,6 +340,7 @@ const Section2 = () => {
                                                             item.id
                                                         )
                                                     }
+                                                    key={item.id}
                                                 >
                                                     <NavBarLink>
                                                         {item.category}
@@ -346,6 +353,7 @@ const Section2 = () => {
                                                             item.id
                                                         )
                                                     }
+                                                    key={item.id}
                                                 >
                                                     <NavBarLink>
                                                         {item.category}

@@ -24,6 +24,11 @@ import {
     Title,
     SocialMediaLink,
     Paragraph,
+    Line2,
+    ParaDiv,
+    FacebookIcon,
+    InstagramIcon,
+    PinterestIcon,
 } from './Footer.elements';
 
 const Footer = () => {
@@ -36,13 +41,13 @@ const Footer = () => {
                 <MidPart>
                     <Links>
                         <ItemInfo>
-                            <LinkItemInfo></LinkItemInfo>
+                            <LinkItemInfo>PRIVACY POLICY</LinkItemInfo>
                         </ItemInfo>
                         <ItemInfo>
-                            <LinkItemInfo></LinkItemInfo>
+                            <LinkItemInfo>TERMS AND CONDITIONS</LinkItemInfo>
                         </ItemInfo>
                         <ItemInfo>
-                            <LinkItemInfo></LinkItemInfo>
+                            <LinkItemInfo>ABOUT</LinkItemInfo>
                         </ItemInfo>
                     </Links>
                 </MidPart>
@@ -54,26 +59,36 @@ const Footer = () => {
                 <MidPart2>
                     <SocialMedia>
                         <SocialMediaInfo>
-                            <SocialMediaLink></SocialMediaLink>
+                            <SocialMediaLink>
+                                <InstagramIcon></InstagramIcon>
+                            </SocialMediaLink>
                         </SocialMediaInfo>
                         <SocialMediaInfo>
-                            <SocialMediaLink></SocialMediaLink>
+                            <SocialMediaLink>
+                                <FacebookIcon></FacebookIcon>
+                            </SocialMediaLink>
                         </SocialMediaInfo>
                         <SocialMediaInfo>
-                            <SocialMediaLink></SocialMediaLink>
+                            <SocialMediaLink>
+                                <PinterestIcon></PinterestIcon>
+                            </SocialMediaLink>
                         </SocialMediaInfo>
                     </SocialMedia>
-                    <VerticalLine></VerticalLine>
+                    <VerticalLine>
+                        <Line2></Line2>
+                    </VerticalLine>
                     <LowerPart>
-                        <NewsLetter></NewsLetter>
+                        <NewsLetter>WEEKLY NEWSLETTER</NewsLetter>
                     </LowerPart>
                 </MidPart2>
                 <LowPart>
                     <Inputs>
-                        <Input></Input>
-                        <Button></Button>
+                        <Input placeholder="NAME@EXAMPLE.COM"></Input>
+                        <Button>SUBSCRIBE</Button>
                     </Inputs>
-                    <Paragraph></Paragraph>
+                    <ParaDiv>
+                        <Paragraph>&copy; 2020 | Travelscape LTD</Paragraph>
+                    </ParaDiv>
                 </LowPart>
             </Center>
             <RightSide>
@@ -83,13 +98,13 @@ const Footer = () => {
                 <MidPart>
                     <Links>
                         <ItemInfo>
-                            <LinkItemInfo></LinkItemInfo>
+                            <LinkItemInfo>TRAVEL INFO</LinkItemInfo>
                         </ItemInfo>
                         <ItemInfo>
-                            <LinkItemInfo></LinkItemInfo>
+                            <LinkItemInfo>RETURNS / EXCHANGES</LinkItemInfo>
                         </ItemInfo>
                         <ItemInfo>
-                            <LinkItemInfo></LinkItemInfo>
+                            <LinkItemInfo>CONTACT US</LinkItemInfo>
                         </ItemInfo>
                     </Links>
                 </MidPart>

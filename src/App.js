@@ -15,10 +15,10 @@ function App() {
                 <NavBar />
                 <Section />
                 <Section2 />
+                <Footer />
                 <Switch>
                     <Route path="/" exact component={Home} />
                 </Switch>
-                <Footer />
             </Router>
         </>
     );
