@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.js": "/travelscape/static/js/main.8430ff44.chunk.js",
+    "main.js.map": "/travelscape/static/js/main.8430ff44.chunk.js.map",
+    "runtime-main.js": "/travelscape/static/js/runtime-main.d0207811.js",
+    "runtime-main.js.map": "/travelscape/static/js/runtime-main.d0207811.js.map",
+    "static/js/2.1e401fba.chunk.js": "/travelscape/static/js/2.1e401fba.chunk.js",
+    "static/js/2.1e401fba.chunk.js.map": "/travelscape/static/js/2.1e401fba.chunk.js.map",
+    "index.html": "/travelscape/index.html",
+    "static/js/2.1e401fba.chunk.js.LICENSE.txt": "/travelscape/static/js/2.1e401fba.chunk.js.LICENSE.txt",
+    "static/media/1407953244000-177513283.2296ba08.jpg": "/travelscape/static/media/1407953244000-177513283.2296ba08.jpg",
+    "static/media/Pexels Videos 1826896.18b3dc9b.mp4": "/travelscape/static/media/Pexels Videos 1826896.18b3dc9b.mp4",
+    "static/media/Pexels Videos 2096551.dd3d2785.mp4": "/travelscape/static/media/Pexels Videos 2096551.dd3d2785.mp4",
+    "static/media/Thompson Chicago Guestroom Corner King Lowres MK0214 CRPD1200x800.20bfa6a3.jpg": "/travelscape/static/media/Thompson Chicago Guestroom Corner King Lowres MK0214 CRPD1200x800.20bfa6a3.jpg",
+    "static/media/andre-benz-Mn9Fa_wQH-M-unsplash.d5480e0e.jpg": "/travelscape/static/media/andre-benz-Mn9Fa_wQH-M-unsplash.d5480e0e.jpg",
+    "static/media/cristina-gottardi-05P65mxLuW8-unsplash.eb7a2035.jpg": "/travelscape/static/media/cristina-gottardi-05P65mxLuW8-unsplash.eb7a2035.jpg",
+    "static/media/jakub-kapusnak-4f4YZfDMLeU-unsplash.f7be6ccc.jpg": "/travelscape/static/media/jakub-kapusnak-4f4YZfDMLeU-unsplash.f7be6ccc.jpg",
+    "static/media/lance-anderson-uevmkfCH98Q-unsplash.2d851c34.jpg": "/travelscape/static/media/lance-anderson-uevmkfCH98Q-unsplash.2d851c34.jpg",
+    "static/media/luca-bravo-_QdFx92MO2U-unsplash.ee2e91c4.jpg": "/travelscape/static/media/luca-bravo-_QdFx92MO2U-unsplash.ee2e91c4.jpg",
+    "static/media/mark-pecar-CNdjopTC1qA-unsplash.24a061d7.jpg": "/travelscape/static/media/mark-pecar-CNdjopTC1qA-unsplash.24a061d7.jpg",
+    "static/media/mikel-parera-ccrvtFDXacg-unsplash.feca5be0.jpg": "/travelscape/static/media/mikel-parera-ccrvtFDXacg-unsplash.feca5be0.jpg",
+    "static/media/nick-karvounis-Ciqxn7FE4vE-unsplash.4110222e.jpg": "/travelscape/static/media/nick-karvounis-Ciqxn7FE4vE-unsplash.4110222e.jpg",
+    "static/media/pexels-suporna-ghosh-5880939.f97cbff4.mp4": "/travelscape/static/media/pexels-suporna-ghosh-5880939.f97cbff4.mp4",
+    "static/media/pexels-svanur-gabriele-5969705.b9c0b3a3.mp4": "/travelscape/static/media/pexels-svanur-gabriele-5969705.b9c0b3a3.mp4",
+    "static/media/production ID_4611892.85aa9a02.mp4": "/travelscape/static/media/production ID_4611892.85aa9a02.mp4",
+    "static/media/reuben-chew-PQIE431vXI4-unsplash.8562ffa1.jpg": "/travelscape/static/media/reuben-chew-PQIE431vXI4-unsplash.8562ffa1.jpg",
+    "static/media/tim-trad-AIwlyvpQJ18-unsplash.cda4a2a1.jpg": "/travelscape/static/media/tim-trad-AIwlyvpQJ18-unsplash.cda4a2a1.jpg",
+    "static/media/video (6).858867e5.mp4": "/travelscape/static/media/video (6).858867e5.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d0207811.js",
+    "static/js/2.1e401fba.chunk.js",
+    "static/js/main.8430ff44.chunk.js"
+  ]
+}
